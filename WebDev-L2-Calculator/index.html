@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProCalc — Smart Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">ProCalc</span>
+                </div>
+                <span class="tagline">Smart Calculator</span>
+            </div>
+            <div class="header-right">
+                <span class="badge">v1.0</span>
+            </div>
+        </header>
+
+        <!-- Calculator -->
+        <main class="calculator-container">
+            <div class="calculator">
+                <div class="display">
+                    <div class="display-top">
+                        <span class="mode-label">STANDARD</span>
+                        <span class="history-label" id="expression"></span>
+                    </div>
+                    <div id="result">0</div>
+                    <div class="display-sub" id="sub-result"></div>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn clear" id="clear">AC</button>
+                    <button class="btn backspace" id="backspace">⌫</button>
+                    <button class="btn operator" data-value="%">%</button>
+                    <button class="btn operator" data-value="/">÷</button>
+
+                    <button class="btn number" data-value="7">7</button>
+                    <button class="btn number" data-value="8">8</button>
+                    <button class="btn number" data-value="9">9</button>
+                    <button class="btn operator" data-value="*">×</button>
+
+                    <button class="btn number" data-value="4">4</button>
+                    <button class="btn number" data-value="5">5</button>
+                    <button class="btn number" data-value="6">6</button>
+                    <button class="btn operator" data-value="-">−</button>
+
+                    <button class="btn number" data-value="1">1</button>
+                    <button class="btn number" data-value="2">2</button>
+                    <button class="btn number" data-value="3">3</button>
+                    <button class="btn operator" data-value="+">+</button>
+
+                    <button class="btn number zero" data-value="0">0</button>
+                    <button class="btn number" data-value=".">.</button>
+                    <button class="btn equals" id="equals">=</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built by <strong>Javeria Ismail</strong> · Oasis Infobyte Internship 2026</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
